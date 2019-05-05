@@ -4,7 +4,7 @@ import string
 def toBase62(num, b = 62):
     if b <= 0 or b > 62:
         return 0
-    base = string.digits + ascii.lowercase + ascii.uppercase 
+    base = string.digits + string.lowercase + string.uppercase 
     r = num % b
     result = base[r];
     q = floor(num/b)
